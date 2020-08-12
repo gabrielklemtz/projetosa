@@ -1,0 +1,226 @@
+/*
+Global
+*/
+html,body{
+    margin: 0!important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+h1, h2{
+    color: #000000cc;
+}
+
+*{
+      /* CORRIGIR COMPORTAMENTO PADRÃO*/
+      box-sizing: border-box; 
+}
+
+/* ESTRUTURA */
+header,main,footer{
+    text-align: center;
+
+}
+
+header, .form, main{
+    /* espaçamento com margin */
+    margin: 0 auto 70px;
+
+    /* limites dos elsmentos na página */
+    width: 90%;
+    max-width: 500px;
+   
+}
+
+/* TITULOS */
+header h1, main h2{
+    margin-top:50px;
+    margin-bottom: 70px;    
+}
+
+header img{
+    width: 50%;
+    margin: 70px;
+}
+
+header h2{
+    margin-left: 51px;
+}
+
+header button, main button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #B8860B;
+    color: white;
+    font-weight: bold;
+}
+
+main h2 span{
+    color: #BDB76B;
+}
+
+.form h2, .forma h2, .forme h2{
+    text-align: right;
+    color: #ffffffee;
+    font-size: 25px;
+}
+
+header p{  
+    margin-top: 24px;
+    font-size: 14px;
+    margin-left: 35px;
+
+}
+
+/* FORM E FORMA*/
+.form, .forma, .forme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+    background-color: #DAA520;
+    padding: 16px 64px;
+    border-radius: 6px;
+
+}
+
+form input, form button{
+    /* LARGURA */
+    width: 100%;      
+   
+    /* ESPAÇAMENTO*/
+    margin-bottom: 4px;     
+    
+    /* Preenchimento*/
+    padding: 8px 16px; 
+
+    /* BORDAS */      
+    border-radius: 4px;
+    border: 1px #ffffff88 solid;
+   
+}
+
+.form input, .forma input, .forme input{
+    background-color:transparent;
+}
+
+.form input::placeholder, .forma input::placeholder, .forme input::placeholder{
+    color:#ffffffaa;
+}
+
+.form button, .forma button, .forme button{
+    font-weight: bold;
+}
+
+
+.apoios{
+    margin-top: 29px;
+    margin-left: 70px;
+    
+}
+
+
+#ultimo {
+    margin-top: -3%;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+}
+
+#ultimo img{
+    width: 6%;
+}
+
+.apoios p{
+    font-size: 14px;
+    margin-top: -40px;
+
+   
+}
+
+.geral p{
+    color: 	#363636;
+    margin-top: -53px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.more {
+margin-top: 16px;
+padding: 8px 16px;
+border-radius: 4px;
+border: none;
+background-color: #B8860B;
+
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+footer{
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eeeeee;
+}
+
+footer p{
+    font-size: 9px;
+    margin-left: 50px;
+
+}
+
+/* funcionalidades com js */
+section.form{
+    transition: all 450ms;
+}
+
+
+section.form.hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
+
+section.forma{
+    transition: all 450ms;
+    margin-top: 17px;
+}
+
+
+section.forma.aparecer{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
+
+section.forme{
+    transition: all 450ms;
+    margin-top: 17px;
+}
+
+
+section.forme.apare{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
+
+
+

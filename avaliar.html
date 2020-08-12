@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- HTML 
+ 
+    HYPERTEXT
+    texto que contém links para outros doc.
+
+    MARKUP 
+    texto conterá marcações.
+    <tag>
+
+    LANGUAGE
+    Sintaxe específica. Linguagem Correta para se comunicar.
+
+-->
+
+<html>
+
+<head>
+    <!-- Config. da página-->
+    <title>Apoie nosso projeto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="2017615.png" />
+</head>
+
+<body>
+    <!--Contéudo da página-->
+    <header>
+        <!--Contéudo do topo-->
+        <img src="1189156.png" alt="APOIE-LOGO">
+        <h2>A sua participação importa</h2>
+        <p>Nos ajude a crescer cada dia mais</p>
+        <p>Muitas horas foram necessárias todos os dias</p>
+        <p>para a criação desse projeto </p>
+
+        <button id="seek">Quero Avaliar</button>
+    </header>
+
+    <!-- INPUT(Entrada de text) -->
+    <!-- OUTPUT(Saida de text) -->
+    <section class="form hide">
+        <h2>Entre na lista</h2>
+        <form action="/avaliar" method="POST">
+            <input type="text" name="nome"  placeholder="Primeiro Nome" id="nome" required>
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <input type="number" name="nota" placeholder="Sua nota" id="nota" required>
+            <input type="submit" id="apoio"   value="Quero Apoiar"></input>
+        </form>
+    </section>
+    <main>
+        <div class="Alterar">
+            <p>Você já nos avaliou </p>
+            <p>e gostaria de alterar a nota ?</p>
+            <!-- BOTÃO PARA APARECER O INPUT DE ALTERAR NOTA-->
+            <button id="seeknot">Quero Alterar</button>
+            <section class="forma aparecer">
+                <h2>Altere sua nota</h2>
+                <form action="/update" method="POST">
+                    <input type="text" name="email" placeholder="Email" id="email" required>
+                    <input type="number" name="nota" placeholder="Nova Nota" id="nota" required>
+                    <input type="submit" id="alterar"   value="Quero Alterar"></input>
+                </form>
+            </section>
+        </div>
+        <div class="Alterar">
+            <br>
+            <br>
+            <br>
+            <p>Gostaria de apagar a avaliação ?</p>
+            <!-- BOTÃO PARA APARECER O INPUT DE ALTERAR NOTA-->
+            <button id="seekdel">Quero Apagar</button>
+            <section class="forme apare">
+                <h2>Apague seus dados</h2>
+                <form action="/delete" method="POST">
+                    <input type="text" name="nome" placeholder="Primeiro nome" id="nome" required>
+                    <input type="text" name="email" placeholder="Email" id="email" required>
+                    <input type="submit" id="excluir"  value="Excluir"></input>
+                </form>
+            </section>
+        </div>
+        <div class="Apoio">
+            <br>
+            <br>
+            <br>
+            <h2>Últimos  <span>apoiadores</span></h2>
+            <section class="apoios">
+            
+            <div class="apoio">
+                <p id="ultimo"></p>
+            </div>
+
+            </section>
+         </div>
+
+
+        <h2>Total de  <span>apoiadores</span></h2>
+        <section class="geral">
+            
+            <div class="geral1">
+                <p id="total"></p>
+            </div>
+
+        </section>
+
+        <button class="more"><a href="/">Saiba Mais</a></button>
+       
+    </main>
+    <footer>
+        <!--Rodapé-->
+        <p>© Conube Contabilidade Online. Todos os direitos reservados</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

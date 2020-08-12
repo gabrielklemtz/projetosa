@@ -1,0 +1,129 @@
+/*
+Global
+*/
+html,body{
+    margin: 0!important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+h1, h2{
+    color: #000000cc;
+}
+
+*{
+      /* CORRIGIR COMPORTAMENTO PADRÃO*/
+      box-sizing: border-box; 
+}
+
+/* ESTRUTURA */
+header,main,footer{
+    text-align: center;
+
+}
+
+header, .form, main{
+    /* espaçamento com margin */
+    margin: 0 auto 70px;
+
+    /* limites dos elsmentos na página */
+    width: 90%;
+    max-width: 500px;
+   
+}
+
+/* TITULOS */
+header h1, main h2{
+    margin-bottom: 15px;    
+}
+
+
+
+header h2{
+    margin-left: 51px;
+}
+
+header button{
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #B8860B;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+p{  
+ 
+    font-weight: bold;
+    color: #696969;
+    font-size: 13px;
+
+}
+
+span{
+
+    color: #1C1C1C
+}
+
+
+.holder {
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 200px;
+}
+.imagem {
+  width: 200px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.avaliar {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #B8860B;
+    
+    }
+    
+
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+footer{
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eeeeee;
+}
+
+footer p{
+    font-size: 9px;
+    margin-left: 50px;
+
+}
+
+
+
